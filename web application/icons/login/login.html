@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <title>Sign Up | Log In</title>
+    <link rel="stylesheet" href="login.css" />
+    <link rel="icon" type="image/x-icon" href="../icons/favicon.ico" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="title-text">
+        <div class="title login">Welcome back</div>
+        <div class="title signup">Let's start!</div>
+      </div>
+      <div class="form-container">
+        <div class="slide-controls">
+          <input type="radio" name="slide" id="login" checked />
+          <input type="radio" name="slide" id="signup" />
+          <label for="login" class="slide login">Login</label>
+          <label id="signup_button" for="signup" class="slide signup">SignUp</label>
+          <div class="slider-tab"></div>
+        </div>
+        <div class="form-inner">
+          <form id="login-form" action="/" method="post" class="login">
+            <div class="field">
+              <input
+                type="email"
+                id="login_email"
+                name="email"
+                placeholder="Email address"
+                required
+              />
+            </div>
+            <div class="field">
+              <input
+                type="password"
+                id="login_password"
+                name="password"
+                placeholder="Password"
+                required
+              />
+            </div>
+            <div class="field btn">
+              <div class="btn-layer"></div>
+              <input type="submit" value="Login" />
+            </div>
+            <div class="signup-link">
+              Don't have account? <a href="">Create a new</a>
+            </div>
+          </form>
+          <form id="signup-form" method="post" action="/signup" class="signup">
+            <div class="field">
+              <input
+                type="text"
+                id="signup_name"
+                name="name"
+                placeholder="Name"
+              />
+            </div>
+            <div class="field">
+              <input
+                type="text"
+                id="signup_email"
+                name="signup_email"
+                placeholder="Email Address"
+                required
+              />
+            </div>
+            <div class="field">
+              <input
+                type="password"
+                id="signup_password"
+                name="signup_password"
+                placeholder="Password"
+                required
+              />
+            </div>
+            <div class="field btn">
+              <div class="btn-layer"></div>
+              <input id="signup_btn" type="submit" value="SignUp" />
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <script src="login.js"></script>
+  </body>
+</html>
